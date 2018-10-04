@@ -1,0 +1,29 @@
+Part 2 Tests
+
+Creates a List containing randomly generated assignments for each of the 6 Red Agents, 5 Blue Agents, 5 Green Agents, 7 Innocent Bystanders, and 2 Assassins 
+
+Functionality | Method | TestCase
+
+tests the roles are assigned randomly | Board.generatePersons | ThreeTeamTest.testRandomAssignments
+tests that their are the correct number of agents | Board.generate3TeamPersons | ThreeTeamTest.testCorrectAgentRatio
+
+Method defined which correctly returns whether or not the Board is in one of the winning states
+
+Functionality | Method | TestCase
+
+Board is not initially in a win state | Board.initBoard | ThreeTeamTest.testInitWinless
+Green team victory with all locations revealed or no victory if assassin is revealed by green | Board.isWinState | Board.testGreenTeamVictory
+Red team victory with all locations revealed or no victory if assassin is revealed by red | Board.isWinState | Board.testRedTeamVictory
+Blue team victory with all locations revealed or no victory if assassin is revealed by blue | Board.isWinState | Board.testBlueTeamVictory
+
+Method defined which correctly returns which team wins once the 2nd Assassin is revealed
+
+Functionality | Method | TestCase
+
+Correct team wins after assassin is revealed | Board.getAssassinWin | ThreeTeamTest.testAssassinWin
+
+Method which returns which is used at the end of a turn to determine the team whose move is next
+
+Functionality | Method | TestCase
+
+Correct team goes next | ThreeTeamModel.endTurnLogic | ThreeTeamTest.testTurns 

@@ -1,0 +1,36 @@
+Functionality | Method | TestCase
+
+~~~TwoTeamBoardTests~~~
+
+Check whether or not a given clue is valid for the board | code.Board.isLegalClue | tests.TwoTeamBoardTests.testIsLegalClue
+Check whether or not a given clue is valid for the board | code.Board.isLegalClue | tests.TwoTeamBoardTests.testIsIllegalClue
+Check whether or not a given clue is valid for the board | code.Board.isLegalClue | tests.TwoTeamBoardTests.testClueIsNull
+Check whether or not a given clue is valid for the board | code.Board.isLegalClue | tests.TwoTeamBoardTests.testClueIsEmpty
+
+Returns a board of 25 locations as a 2D array | code.Board.get_gameBoard | tests.TwoTeamBoardTests.boardhas25
+
+Generate 25 distinct codenames from gamewords | code.Board.listOfCodeNames | tests.TwoTeamBoardTests.test25CodeNames
+
+Reads in a file and stores it as an array | code.Board.readInGameWords | tests.TwoTeamBoardTests.testReadGameWords
+
+Generates a list of People in a random order | code.Board.get_listOfPerson | tests.TwoTeamBoardTests.testRandomPersonAssignment
+
+Initialize a board with the correct setup for a new game | code.Board.initBoard | tests.TwoTeamBoardTests.testBoardInitialization
+
+Generate a unique set of code names from the gamewords | code.Board.get_codeNames | tests.TwoTeamBoardTests.testUniqueCodeNames
+
+Return the team that wins if the assassin was selected | code.Board.getAssassinWinTeam | tests.TwoTeamBoardTests.testRedSelectedAssassin
+Return the team that wins if the assassin was selected | code.Board.getAssassinWinTeam | tests.TwoTeamBoardTests.testBlueSelectedAssassin
+
+Reveals a Location based on whether it has already been revealed and whether the revealer is on the same team | code.Board.updateLocation | test.TwoTeamBoardTests.testUpdateLocationNotRevealedSameTeam
+Reveals a Location based on whether it has already been revealed and whether the revealer is on the same team | code.Board.updateLocation | test.TwoTeamBoardTests.testUpdateLocationRevealedSameTeam
+Reveals a Location based on whether it has already been revealed and whether the revealer is on the same team | code.Board.updateLocation | test.TwoTeamBoardTests.testUpdateLocationNotRevealedDiffferentTeam
+Reveals a Location based on whether it has already been revealed and whether the revealer is on the same team | code.Board.updateLocation | test.TwoTeamBoardTests.testUpdateLocationRevealedDifferentTeam
+
+Check if board is in a win state | code.Board.isWinState | tests.TwoTeamBoardTests.testNoWinState
+Check if board is in a win state | code.Board.isWinState | tests.TwoTeamBoardTests.testBlueWinState
+Check if board is in a win state | code.Board.isWinState | tests.TwoTeamBoardTests.testRedWinState
+
+~~~ThreeTeamBoardTests~~~
+
+WIP
